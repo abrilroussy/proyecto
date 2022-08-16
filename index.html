@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mi página web</title>
+
+  <!-- Bootstrap CSS-->
+  <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"  crossorigin="anonymous">
+  <!-- Bootstrap JS-->
+  <script src="dist/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin= "anonymous"></script>
+
+<style>
+  * { 
+    background-color : rgb(221, 142, 236); 
+    font-family : sans-serif;
+    margin : 0px;
+
+  }
+
+  .icon {
+    margin-top : -80px;
+    padding : 10px;
+    z-index : 1;
+
+  }
+  .header {
+    position : relative ;
+    top : 0px;
+    left : 0px;
+    z-index : 0;
+  }
+  .cajita {
+    background-color: rgb(180, 87, 180, 0.5);
+    color : white;
+    font-weight : bold;
+    line-height: 20px;
+    padding-left : 10px;
+  }
+
+  p {
+    background : transparent;
+  }
+
+  h3 {
+    color : white;
+    font-weight : bold;
+    padding-left : 20px;
+    margin : 0;
+    text-decoration : underline;
+  }
+
+ .años {
+    color : white;
+    font-weight : bold;
+    padding-left : 20px;
+    font-size : 30px;
+    background-color : rgb(221, 142, 236); 
+ }
+</style>
+</head>
+
+<body>
+
+<!--Navigation bar-->
+<div class="container-fluid">
+  <nav class="navbar navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">
+    <img src="file:///C:/Users/A/Desktop/programacion/Yo%20programo/APLogo-20-20.png" alt="Logo" style= "width: 150px ; padding : 0px;"></a>
+  
+    <!-- Toggler Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </div>
+  </nav> 
+</div>
+
+<!-- Banner header and icon --> 
+<div class="container-fluid">
+<div class="header" style="padding : 10px; padding-bottom : 0px;" >
+    <img src="file:///C:/Users/A/Desktop/programacion/Yo%20programo/M%C3%B3dulo%202/Front%20End%20proyecto%20final/Header2.png" 
+    class ="img-fluid rounded" alt="header" height="290"; width="1350";> 
+  <div class="icon rounded-circle" >
+    <img src="file:///C:/Users/A/Desktop/programacion/Yo%20programo/M%C3%B3dulo%202/Front%20End%20proyecto%20final/kdhs.jpg" class= "rounded-circle img-fluid" 
+    alt="icon" height="130" width="130">
+  </div>
+</div>
+</div>
+
+<!-- About me-->
+
+<div class="container-fluid" style = "padding : 20px; padding-top : 0px;">
+    <div class="row">
+      <div class="col-sm-3" >
+        <div class= "rounded cajita"> 
+        <br>
+        <p>Abril Alarcón Roussy
+          <br>
+        Full Stack Developer Junior</p>
+        <br> 
+      <br>
+    </div>
+    </div>
+      <div class="col-sm-9">
+      <div class= "rounded cajita">
+      <br>
+      <p>Tengo 22 años, vivo en Capital Federal y me interesa introducirme en el mercado laboral del mundo de la programación full stack,
+        soy una persona muy organizada y metódica, tengo un título en Dirección de Sonido y actualmente también estoy cursando la carrera de Letras de la UBA.
+        </p>
+      </p>
+      <br> </div>
+      </div>
+    </div>
+  </div>
+
+<!--Educacion-->
+
+<div>
+<h3>Estudios</h3>
+</div>
+
+<div class="container-fluid" style = "padding : 20px; padding-top : 10px;">
+  <div class="row">
+    <div class="col-sm-2" >
+      <div class= "rounded"> 
+      <br>
+      <p class="años">2012-2018</p>
+      <br> </div>
+      </div>
+    <div class="col-sm-8">
+    <div class= "rounded cajita">
+    <br>
+    <p>BACHILLER EN MÚSICA</p>
+    <p>Especialización en composición musical
+      <br>
+      Bachillerato de Bellas Artes Universidad Nacional de La Plata “Prof. Francisco A. de Santo”
+      </p>
+    <br> </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" style = "padding : 20px; padding-top : 0px;">
+  <div class="row">
+    <div class="col-sm-2" >
+      <div class= "rounded "> 
+      <br>
+      <p class="años">2019-2023</p>
+      <br> </div>
+      </div>
+    <div class="col-sm-8">
+    <div class= "rounded cajita">
+    <br>
+    <p>TERCIARIO EN DIRECCIÓN DE SONIDO</p>
+    <p>Escuela Nacional de Experimentación y Realización Cinematográfica (ENERC) 
+      </p>
+    <br> </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" style = "padding : 20px; padding-top : 0px;">
+  <div class="row">
+    <div class="col-sm-2" >
+      <div class= "rounded "> 
+      <br>
+      <p class="años">2021</p>
+      <br> </div>
+      </div>
+    <div class="col-sm-8">
+    <div class= "rounded cajita">
+    <br>
+    <p>CERTIFICACION B2 FIRST</p>
+    <p>Aprobado con grade A
+      <br>
+      Cambridge Asessment English       
+      </p>
+    <br> </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" style = "padding : 20px; padding-top : 0px;">
+  <div class="row">
+    <div class="col-sm-2" >
+      <div class= "rounded"> 
+      <br>
+      <p class="años">2022-2023</p>
+      <br> </div>
+      </div>
+    <div class="col-sm-8">
+    <div class= "rounded cajita">
+    <br>
+    <p>CERTIFICACION ARGENTINA PROGRAMA #SEPROGRAMAR</p>
+    <p>CERTIFICACION ARGENTINA PROGRAMA #YOPROGRAMO
+      <br>
+      Programador web Full Stack Junior</p>
+    <br> </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Soft and hard skills-->
+
+<div>
+  <h3>Habilidades</h3>
+</div>
+
+<div class="container-fluid" style = "padding : 20px; padding-top : 10px;">
+  <div class="row">
+    <div class="col-sm-2" >
+      <div class= "rounded cajita"> 
+        <br>
+        <p>Microsoft Office 
+        (Word, Excel, Powerpoint)</p>
+        <br>
+        <div class="progress" style=" margin-right : 10px; margin-bottom : 10px;">
+        <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
+        style="width:80%"></div> 
+        <br>
+        </div>
+       </div>
+      </div>
+    <div class="col-sm-2">
+    <div class= "rounded cajita">
+      <br>
+      <p>Inglés</p>
+      <br>
+      <br>
+      <div class="progress" style=" margin-right : 10px; margin-bottom : 10px;">
+      <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
+      style="width:100%"></div> 
+      <br>
+      </div>
+     </div>
+    </div>
+    <div class="col-sm-2">
+      <div class= "rounded cajita">
+        <br>
+        <p>Paquete Adobe (Premiere, Audition, Photoshop)</p>
+        <div class="progress" style=" margin-right : 10px; margin-bottom : 10px;">
+        <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
+        style="width:80%"></div> 
+        <br>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-2" >
+        <div class= "rounded cajita"> 
+          <br>
+          <p>HTML, CSS, Bootstrap</p>
+          <br>
+          <br>
+          <div class="progress" style=" margin-right : 10px; margin-bottom : 10px;">
+          <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
+          style="width:90%"></div> 
+          <br>
+          </div>
+         </div>
+        </div>
+      <div class="col-sm-2">
+      <div class= "rounded cajita">
+        <br>
+        <p>Javascript, Ruby</p>
+        <br>
+        <br>
+        <div class="progress" style=" margin-right : 10px; margin-bottom : 10px;">
+        <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
+        style="width:90%"></div> 
+        <br>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-2">
+        <div class= "rounded cajita">
+          <br>
+          <p>Teoría Musical, Composición, Violín</p>
+          <br>
+          <div class="progress" style=" margin-right : 10px; margin-bottom : 10px;">
+          <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
+          style="width:100%"></div> 
+          <br>
+          </div>
+         </div>
+        </div>
+  </div>
+</div>
+
+<!--Experiencia-->
+
+<div>
+  <h3>Experiencia laboral</h3>
+  </div>
+  
+  <div class="container-fluid" style = "padding : 20px; padding-top : 10px;">
+    <div class="row">
+      <div class="col-sm-2" >
+        <div class= "rounded"> 
+        <br>
+        <p class="años">2020-Hoy</p>
+        <br> </div>
+        </div>
+      <div class="col-sm-8">
+      <div class= "rounded cajita">
+      <br>
+      <p>CLASES PARTICULARES DE INGLÉS</p>
+      <p>Grammar, Speaking, Reading </p>
+      <br> </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid" style = "padding : 20px; padding-top : 0px;">
+    <div class="row">
+      <div class="col-sm-2" >
+        <div class= "rounded "> 
+        <br>
+        <p class="años">2021-2022</p>
+        <br> </div>
+        </div>
+      <div class="col-sm-8">
+      <div class= "rounded cajita">
+      <br>
+      <p>MANEJO DE REDES SOCIALES DEL CLUB POA</p>
+      <p>Edición de videos, creación de flyers y diseño.
+        </p>
+      <br> </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid" style = "padding : 20px; padding-top : 0px;">
+    <div class="row">
+      <div class="col-sm-2" >
+        <div class= "rounded "> 
+        <br>
+        <p class="años">2022</p>
+        <br> </div>
+        </div>
+      <div class="col-sm-8">
+      <div class= "rounded cajita">
+      <br>
+      <p>MOZA/VENDEDORA EN COPANI PURO CHOCOLATE</p>
+      <p>Encargada de la caja, organización y venta del local y también de preparar/servir café y postres.    
+        </p>
+      <br> </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Experiencia-->
+
+<div>
+  <h3>Proyectos</h3>
+  </div>
+  
+  <div class="container-fluid" style = "padding : 20px; padding-top : 10px;">
+    <div class="row">
+      <div class="col-sm-2" >
+        <div class= "rounded"> 
+        <br>
+        <p class="años">2023</p>
+        <br> </div>
+        </div>
+      <div class="col-sm-8">
+      <div class= "rounded cajita">
+      <br>
+      <p>CREACIÓN DE PORTAFOLIO WEB</p>
+      <p>Trabajo Final de Argentina Programa</p>
+      <br> </div>
+      </div>
+    </div>
+  </div>
+
+<div> HOLA GITHUB</div>
+
+
+</body>
+</html>
+
