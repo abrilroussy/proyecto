@@ -15,54 +15,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin= "anonymous"></script>
 
-<style>
-  * { 
-    background-color : rgb(221, 142, 236); 
-    font-family : sans-serif;
-    margin : 0px;
+<link rel="stylesheet" type="text/css" href="estilos.css">
 
-  }
-
-  .icon {
-    margin-top : -80px;
-    padding : 10px;
-    z-index : 1;
-
-  }
-  .header {
-    position : relative ;
-    top : 0px;
-    left : 0px;
-    z-index : 0;
-  }
-  .cajita {
-    background-color: rgb(180, 87, 180, 0.5);
-    color : white;
-    font-weight : bold;
-    line-height: 20px;
-    padding-left : 10px;
-  }
-
-  p {
-    background : transparent;
-  }
-
-  h3 {
-    color : white;
-    font-weight : bold;
-    padding-left : 20px;
-    margin : 0;
-    text-decoration : underline;
-  }
-
- .años {
-    color : white;
-    font-weight : bold;
-    padding-left : 20px;
-    font-size : 30px;
-    background-color : rgb(221, 142, 236); 
- }
-</style>
 </head>
 
 <body>
@@ -98,7 +52,7 @@ integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0
 
 <!-- Banner header and icon --> 
 <div class="container-fluid">
-<div class="header" style="padding : 10px; padding-bottom : 0px;" >
+<div class="header" >
     <img src="https://raw.githubusercontent.com/abrilroussy/proyecto-FrontEnd/main/Header2.png" 
     class ="img-fluid rounded" alt="header" height="290"; width="1350";> 
   <div class="icon rounded-circle" >
@@ -110,7 +64,7 @@ integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0
 
 <!-- About me-->
 
-<div class="container-fluid" style = "padding : 20px; padding-top : 0px;">
+<div class="container-fluid container-medio">
     <div class="row">
       <div class="col-sm-3" >
         <div class= "rounded cajita"> 
@@ -140,7 +94,7 @@ integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0
 <h3>Estudios</h3>
 </div>
 
-<div class="container-fluid" style = "padding : 20px; padding-top : 10px;">
+<div class="container-fluid container-arriba">
   <div class="row">
     <div class="col-sm-2" >
       <div class= "rounded"> 
@@ -161,7 +115,7 @@ integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0
   </div>
 </div>
 
-<div class="container-fluid" style = "padding : 20px; padding-top : 0px;">
+<div class="container-fluid container-medio">
   <div class="row">
     <div class="col-sm-2" >
       <div class= "rounded "> 
@@ -180,7 +134,7 @@ integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0
   </div>
 </div>
 
-<div class="container-fluid" style = "padding : 20px; padding-top : 0px;">
+<div class="container-fluid container-medio">
   <div class="row">
     <div class="col-sm-2" >
       <div class= "rounded "> 
@@ -201,7 +155,7 @@ integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0
   </div>
 </div>
 
-<div class="container-fluid" style = "padding : 20px; padding-top : 0px;">
+<div class="container-fluid container-medio">
   <div class="row">
     <div class="col-sm-2" >
       <div class= "rounded"> 
@@ -228,7 +182,7 @@ integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0
   <h3>Habilidades</h3>
 </div>
 
-<div class="container-fluid" style = "padding : 20px; padding-top : 10px;">
+<div class="container-fluid container-arriba" >
   <div class="row">
     <div class="col-sm-2" >
       <div class= "rounded cajita"> 
@@ -236,7 +190,7 @@ integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0
         <p>Microsoft Office 
         (Word, Excel, Powerpoint)</p>
         <br>
-        <div class="progress" style=" margin-right : 10px; margin-bottom : 10px;">
+        <div class="progress barrita" >
         <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
         style="width:80%"></div> 
         <br>
@@ -249,7 +203,7 @@ integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0
       <p>Inglés</p>
       <br>
       <br>
-      <div class="progress" style=" margin-right : 10px; margin-bottom : 10px;">
+      <div class="progress barrita">
       <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
       style="width:100%"></div> 
       <br>
@@ -260,7 +214,7 @@ integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0
       <div class= "rounded cajita">
         <br>
         <p>Paquete Adobe (Premiere, Audition, Photoshop)</p>
-        <div class="progress" style=" margin-right : 10px; margin-bottom : 10px;">
+        <div class="progress barrita">
         <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
         style="width:80%"></div> 
         <br>
@@ -273,7 +227,7 @@ integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0
           <p>HTML, CSS, Bootstrap</p>
           <br>
           <br>
-          <div class="progress" style=" margin-right : 10px; margin-bottom : 10px;">
+          <div class="progress barrita">
           <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
           style="width:90%"></div> 
           <br>
@@ -286,7 +240,7 @@ integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0
         <p>Javascript, Ruby</p>
         <br>
         <br>
-        <div class="progress" style=" margin-right : 10px; margin-bottom : 10px;">
+        <div class="progress barrita">
         <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
         style="width:90%"></div> 
         <br>
@@ -298,7 +252,7 @@ integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0
           <br>
           <p>Teoría Musical, Composición, Violín</p>
           <br>
-          <div class="progress" style=" margin-right : 10px; margin-bottom : 10px;">
+          <div class="progress barrita">
           <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
           style="width:100%"></div> 
           <br>
@@ -312,9 +266,9 @@ integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0
 
 <div>
   <h3>Experiencia laboral</h3>
-  </div>
+</div>
   
-  <div class="container-fluid" style = "padding : 20px; padding-top : 10px;">
+  <div class="container-fluid container-arriba">
     <div class="row">
       <div class="col-sm-2" >
         <div class= "rounded"> 
@@ -332,7 +286,7 @@ integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0
     </div>
   </div>
   
-  <div class="container-fluid" style = "padding : 20px; padding-top : 0px;">
+  <div class="container-fluid container-medio">
     <div class="row">
       <div class="col-sm-2" >
         <div class= "rounded "> 
@@ -351,7 +305,7 @@ integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0
     </div>
   </div>
   
-  <div class="container-fluid" style = "padding : 20px; padding-top : 0px;">
+  <div class="container-fluid container-medio">
     <div class="row">
       <div class="col-sm-2" >
         <div class= "rounded "> 
@@ -376,7 +330,7 @@ integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0
   <h3>Proyectos</h3>
   </div>
   
-  <div class="container-fluid" style = "padding : 20px; padding-top : 10px;">
+  <div class="container-fluid container-arriba">
     <div class="row">
       <div class="col-sm-2" >
         <div class= "rounded"> 

@@ -1,0 +1,63 @@
+* { 
+    background-color : rgb(221, 142, 236); 
+    font-family : sans-serif;
+    margin : 0px;
+
+  }
+
+  .icon {
+    margin-top : -80px;
+    padding : 10px;
+    z-index : 1;
+
+  }
+  .header {
+    position : relative ;
+    top : 0px;
+    left : 0px;
+    z-index : 0;
+    padding : 10px; 
+    padding-bottom : 0px;
+  }
+  .cajita {
+    background-color: rgb(180, 87, 180, 0.5);
+    color : white;
+    font-weight : bold;
+    line-height: 20px;
+    padding-left : 10px;
+  }
+
+  p {
+    background : transparent;
+  }
+
+  h3 {
+    color : white;
+    font-weight : bold;
+    padding-left : 20px;
+    margin : 0;
+    text-decoration : underline;
+  }
+
+ .años {
+    color : white;
+    font-weight : bold;
+    padding-left : 20px;
+    font-size : 30px;
+    background-color : rgb(221, 142, 236); 
+ }
+
+ .barrita {
+  margin-right : 10px; 
+  margin-bottom : 10px;
+ }
+
+ .container-arriba {
+  padding : 20px;
+  padding-top : 10px;
+ }
+
+ .container-medio { 
+  padding : 20px; 
+  padding-top : 0px;
+ }
