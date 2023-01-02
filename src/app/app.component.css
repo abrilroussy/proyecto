@@ -5,6 +5,50 @@
 
   }
 
+  .modal-body{
+    text-align : center;
+  }
+
+  .modal-title {
+    text-align: center;
+    color: white;
+  }
+
+  .input-field .validate {
+    border: none;
+    margin-bottom: 15px;
+    color: #fdfaff;
+    background: #d3a6df;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    }
+    
+    .second-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 60px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    background: #ad2dd4;
+    outline: none;
+    }
+    
+    .second-button:active{
+    background: linear-gradient(145deg,#e781e2, #c356d1);
+    box-shadow: 5px 5px 10px #f1e9e9, -5px -5px 10px #e9d8d8;
+    border: none;
+    outline: none;
+    }
+
+    p{
+    color: #bfc0c0;
+    padding: 20px;
+    }
+
   .icon {
     margin-top : -80px;
     padding : 10px;
@@ -29,6 +73,7 @@
 
   p {
     background : transparent;
+    color: white
   }
 
   h3 {
@@ -61,4 +106,10 @@
  .container-medio { 
   padding : 20px; 
   padding-top : 0px;
+ }
+
+ .login-btn {
+    margin-right : -10px;
+    padding : 10px;
+    z-index : 1
  }
