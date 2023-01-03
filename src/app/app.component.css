@@ -44,10 +44,6 @@
     outline: none;
     }
 
-    p{
-    color: #bfc0c0;
-    padding: 20px;
-    }
 
   .icon {
     margin-top : -80px;
@@ -73,13 +69,23 @@
 
   p {
     background : transparent;
-    color: white
+    color: white;
+    padding: 20px;
+  }
+
+  h4 { 
+    font-size: 25px;
+    font-family: fantasy ;
+    background: transparent;
+    padding-left: 20px;
   }
 
   h3 {
+    font-family: serif;
+    font-size: 30px;
     color : white;
     font-weight : bold;
-    padding-left : 20px;
+    padding-left : 35px;
     margin : 0;
     margin-bottom: 0;
     text-decoration : underline;
@@ -94,8 +100,9 @@
  }
 
  .barrita {
-  margin-right : 10px; 
+  margin-right : 5px; 
   margin-bottom : 10px;
+  padding : 0px;
  }
 
  .container-arriba {
@@ -108,8 +115,3 @@
   padding-top : 0px;
  }
 
- .login-btn {
-    margin-right : -10px;
-    padding : 10px;
-    z-index : 1
- }
