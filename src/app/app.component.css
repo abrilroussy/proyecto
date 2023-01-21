@@ -64,7 +64,8 @@
     color : white;
     font-weight : bold;
     line-height: 20px;
-    padding-left : 10px;
+    padding: 10px;
+   
   }
 
   p {
@@ -97,6 +98,7 @@
     padding-left : 20px;
     font-size : 30px;
     background-color : rgb(221, 142, 236); 
+    border-style:double;
  }
 
  .barrita {
@@ -113,5 +115,6 @@
  .container-medio { 
   padding : 20px; 
   padding-top : 0px;
- }
+ } 
+
 

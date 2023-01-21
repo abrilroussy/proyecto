@@ -1,3 +1,4 @@
+
 <!--Navigation bar-->
 <div class="container-fluid">
   <nav class="navbar navbar-dark">
@@ -7,208 +8,201 @@
 
     <!-- LOGIN -->  
    <div class="login-btn">
-    <button type="button" class="btn btn-outline-light my-2 my-sm-0" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
-   </div> 
+    <button type="button" class="btn btn-outline-light my-2 my-sm-0" (click)="test = !test" >Login</button>
+  </div> 
   </nav>
 </div>
 
-
-<!--Popup login-->
-
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content ">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body ">
-        <div class="input-field"><input placeholder="Usuario" class="validate"></div>
-        <div class="input-field"><input placeholder="Contraseña" class="validate"></div>
-        <button type="button" class="second-button">Login</button>
-      </div>
-     </div>
-    </div>
-  </div>
-
-
-
+<app-login *ngIf="test"></app-login>
 
 <!-- Banner header and icon --> 
 <div class="container-fluid">
-<div class="header" >
-    <img src="assets/Header2.png" 
-    class ="img-fluid rounded" alt="header" height="290" width="1350"> 
-  <div class="icon rounded-circle" >
-    <img src="assets/kdhs.jpg" class= "rounded-circle img-fluid" 
-    alt="icon" height="130" width="130">
+  <div class="header" >
+      <img src="assets/Header2.png" 
+      class ="img-fluid rounded" alt="header" height="290" width="1350"> 
+    <div class="icon rounded-circle" >
+      <img src="assets/kdhs.jpg" class= "rounded-circle img-fluid" 
+      alt="icon" height="130" width="130">
+    </div>
   </div>
-</div>
-</div>
-
-<!-- About me-->
-
-<div class="container-fluid container-medio">
-    <div class="row">
-      <div class="col-sm-3" >
-        <div class= "rounded cajita"> 
-        <br>
-        <p>Abril Alarcón Roussy
+  </div>
+  
+  <!-- About me-->
+  
+  <div class="container-fluid container-medio">
+      <div class="row">
+        <div class="col-sm-3" >
+          <div class= "rounded cajita"> 
           <br>
-        Full Stack Developer Junior</p>
-        <br> 
-      <br>
+          <p>Abril Alarcón Roussy
+            <br>
+          Full Stack Developer Junior</p>
+          <br> 
+        <br>
+      </div>
+      </div>
+        <div class="col-sm-9">
+        <div class= "rounded cajita">
+        <br>
+        <p>Tengo 22 años, vivo en Capital Federal y me interesa introducirme en el mercado laboral del mundo de la programación full stack,
+          soy una persona muy organizada y metódica, tengo un título en Dirección de Sonido y actualmente también estoy cursando la carrera de Letras de la UBA.
+        
+        </p>
+        <br> </div>
+        </div>
+      </div>
     </div>
-    </div>
-      <div class="col-sm-9">
+  
+  <!--Educacion-->
+  
+  <div>
+  <h3>Estudios</h3>
+  </div>
+  
+  <div class="container-fluid container-arriba">
+    <div class="row">
+      <div class="col-sm-2" >
+        <div class= "rounded"> 
+        <br>
+        <p class="años">2012-2018</p>
+        <br> </div>
+        </div>
+      <div class="col-sm-8">
       <div class= "rounded cajita">
       <br>
-      <p>Tengo 22 años, vivo en Capital Federal y me interesa introducirme en el mercado laboral del mundo de la programación full stack,
-        soy una persona muy organizada y metódica, tengo un título en Dirección de Sonido y actualmente también estoy cursando la carrera de Letras de la UBA.
-      
-      </p>
-      <br> </div>
-      </div>
-    </div>
-  </div>
-
-<!--Educacion-->
-
-<div>
-<h3>Estudios</h3>
-</div>
-
-<div class="container-fluid container-arriba">
-  <div class="row">
-    <div class="col-sm-2" >
-      <div class= "rounded"> 
-      <br>
-      <p class="años">2012-2018</p>
-      <br> </div>
-      </div>
-    <div class="col-sm-8">
-    <div class= "rounded cajita">
-    <br>
-    <h4>BACHILLER EN MÚSICA</h4>
-    <p>Especialización en composición musical
-      <br>
-      Bachillerato de Bellas Artes Universidad Nacional de La Plata “Prof. Francisco A. de Santo”
-      </p>
-    <br> </div>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid container-medio">
-  <div class="row">
-    <div class="col-sm-2" >
-      <div class= "rounded "> 
-      <br>
-      <p class="años">2019-2023</p>
-      <br> </div>
-      </div>
-    <div class="col-sm-8">
-    <div class= "rounded cajita">
-    <br>
-    <h4>TERCIARIO EN DIRECCIÓN DE SONIDO</h4>
-    <p>Escuela Nacional de Experimentación y Realización Cinematográfica (ENERC) 
-      </p>
-    <br> </div>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid container-medio">
-  <div class="row">
-    <div class="col-sm-2" >
-      <div class= "rounded "> 
-      <br>
-      <p class="años">2021</p>
-      <br> </div>
-      </div>
-    <div class="col-sm-8">
-    <div class= "rounded cajita">
-    <br>
-    <h4>CERTIFICACION B2 FIRST</h4>
-    <p>Aprobado con grade A
-      <br>
-      Cambridge Asessment English       
-      </p>
-    <br> </div>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid container-medio">
-  <div class="row">
-    <div class="col-sm-2" >
-      <div class= "rounded"> 
-      <br>
-      <p class="años">2022-2023</p>
-      <br> </div>
-      </div>
-    <div class="col-sm-8">
-    <div class= "rounded cajita">
-    <br>
-    <h4>CERTIFICACION ARGENTINA PROGRAMA #SEPROGRAMAR</h4>
-    <h4>CERTIFICACION ARGENTINA PROGRAMA #YOPROGRAMO </h4>
-      <br>
-      <p>Programador web Full Stack Junior</p>
-    <br> </div>
-    </div>
-  </div>
-</div>
-
-
-<!--Soft and hard skills-->
-
-<div>
-  <h3>Habilidades</h3>
-</div>
-
-<div class="container-fluid container-arriba" >
-  <div class="row">
-    <div class="col-sm-2" >
-      <div class= "rounded cajita"> 
+      <h4>BACHILLER EN MÚSICA</h4>
+      <p>Especialización en composición musical
         <br>
-        <p>Microsoft Office 
-        (Word, Excel, Powerpoint)</p>
+        Bachillerato de Bellas Artes Universidad Nacional de La Plata “Prof. Francisco A. de Santo”
+        </p>
+      <br> </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid container-medio">
+    <div class="row">
+      <div class="col-sm-2" >
+        <div class= "rounded "> 
         <br>
-        <div class="progress barrita" >
-        <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
-        style="width:80%"></div> 
-        <br>
+        <p class="años">2019-2023</p>
+        <br> </div>
         </div>
-       </div>
-      </div>
-    <div class="col-sm-2">
-    <div class= "rounded cajita">
-      <br>
-      <p>Inglés</p>
-      <br>
-      <br>
-      <div class="progress barrita">
-      <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
-      style="width:100%"></div> 
-      <br>
-      </div>
-     </div>
-    </div>
-    <div class="col-sm-2">
+      <div class="col-sm-8">
       <div class= "rounded cajita">
-        <br>
-        <p>Paquete Adobe (Premiere, Audition, Photoshop)</p>
-        <div class="progress barrita">
-        <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
-        style="width:80%"></div> 
-        <br>
-        </div>
-       </div>
+      <br>
+      <h4>TERCIARIO EN DIRECCIÓN DE SONIDO</h4>
+      <p>Escuela Nacional de Experimentación y Realización Cinematográfica (ENERC) 
+        </p>
+      <br> </div>
       </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid container-medio">
+    <div class="row">
+      <div class="col-sm-2" >
+        <div class= "rounded "> 
+        <br>
+        <p class="años">2021</p>
+        <br> </div>
+        </div>
+      <div class="col-sm-8">
+      <div class= "rounded cajita">
+      <br>
+      <h4>CERTIFICACION B2 FIRST</h4>
+      <p>Aprobado con grade A
+        <br>
+        Cambridge Asessment English       
+        </p>
+      <br> </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid container-medio">
+    <div class="row">
+      <div class="col-sm-2" >
+        <div class= "rounded"> 
+        <br>
+        <p class="años">2022-2023</p>
+        <br> </div>
+        </div>
+      <div class="col-sm-8">
+      <div class= "rounded cajita">
+      <br>
+      <h4>CERTIFICACION ARGENTINA PROGRAMA #SEPROGRAMAR</h4>
+      <h4>CERTIFICACION ARGENTINA PROGRAMA #YOPROGRAMO </h4>
+        <br>
+        <p>Programador web Full Stack Junior</p>
+      <br> </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!--Soft and hard skills-->
+  
+  <div>
+    <h3>Habilidades</h3>
+  </div>
+  
+  <div class="container-fluid container-arriba" >
+    <div class="row">
       <div class="col-sm-2" >
         <div class= "rounded cajita"> 
           <br>
-          <p>HTML, CSS, Bootstrap</p>
+          <p>Microsoft Office 
+          (Word, Excel, Powerpoint)</p>
+          <br>
+          <div class="progress barrita" >
+          <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
+          style="width:80%"></div> 
+          <br>
+          </div>
+         </div>
+        </div>
+      <div class="col-sm-2">
+      <div class= "rounded cajita">
+        <br>
+        <p>Inglés</p>
+        <br>
+        <br>
+        <div class="progress barrita">
+        <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
+        style="width:100%"></div> 
+        <br>
+        </div>
+       </div>
+      </div>
+      <div class="col-sm-2">
+        <div class= "rounded cajita">
+          <br>
+          <p>Paquete Adobe (Premiere, Audition, Photoshop)</p>
+          <div class="progress barrita">
+          <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
+          style="width:80%"></div> 
+          <br>
+          </div>
+         </div>
+        </div>
+        <div class="col-sm-2" >
+          <div class= "rounded cajita"> 
+            <br>
+            <p>HTML, CSS, Bootstrap</p>
+            <br>
+            <br>
+            <div class="progress barrita">
+            <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
+            style="width:90%"></div> 
+            <br>
+            </div>
+           </div>
+          </div>
+        <div class="col-sm-2">
+        <div class= "rounded cajita">
+          <br>
+          <p>Javascript, Ruby</p>
           <br>
           <br>
           <div class="progress barrita">
@@ -218,149 +212,104 @@
           </div>
          </div>
         </div>
-      <div class="col-sm-2">
-      <div class= "rounded cajita">
-        <br>
-        <p>Javascript, Ruby</p>
-        <br>
-        <br>
-        <div class="progress barrita">
-        <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
-        style="width:90%"></div> 
-        <br>
-        </div>
-       </div>
-      </div>
-      <div class="col-sm-2">
-        <div class= "rounded cajita">
-          <br>
-          <p>Teoría Musical, Composición, Violín</p>
-          <br>
-          <div class="progress barrita">
-          <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
-          style="width:100%"></div> 
-          <br>
-          </div>
-         </div>
-        </div>
-  </div>
-</div>
-
-<!--Experiencia-->
-
-<div>
-  <h3>Experiencia laboral</h3>
-</div>
-  
-  <div class="container-fluid container-arriba">
-    <div class="row">
-      <div class="col-sm-2" >
-        <div class= "rounded"> 
-        <br>
-        <p class="años">2020-Hoy</p>
-        <br> </div>
-        </div>
-      <div class="col-sm-8">
-      <div class= "rounded cajita">
-      <br>
-      <h4>CLASES PARTICULARES DE INGLÉS</h4>
-      <p>Grammar, Speaking, Reading </p>
-      <br> </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="container-fluid container-medio">
-    <div class="row">
-      <div class="col-sm-2" >
-        <div class= "rounded "> 
-        <br>
-        <p class="años">2021-2022</p>
-        <br> </div>
-        </div>
-      <div class="col-sm-8">
-      <div class= "rounded cajita">
-      <br>
-      <h4>MANEJO DE REDES SOCIALES DEL CLUB POA</h4>
-      <p>Edición de videos, creación de flyers y diseño.
-        </p>
-      <br> </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="container-fluid container-medio">
-    <div class="row">
-      <div class="col-sm-2" >
-        <div class= "rounded "> 
-        <br>
-        <p class="años">2022</p>
-        <br> </div>
-        </div>
-      <div class="col-sm-8">
-      <div class= "rounded cajita">
-      <br>
-      <h4>MOZA/VENDEDORA EN COPANI PURO CHOCOLATE</h4>
-      <p>Encargada de la caja, organización y venta del local y también de preparar/servir café y postres.    
-        </p>
-      <br> </div>
-      </div>
-    </div>
-  </div>
-
-  <!--Experiencia-->
-
-<div>
-  <h3>Proyectos</h3>
-  </div>
-  
-  <div class="container-fluid container-arriba">
-    <div class="row">
-      <div class="col-sm-2" >
-        <div class= "rounded"> 
-        <br>
-        <p class="años">2023</p>
-        <br> </div>
-        </div>
-      <div class="col-sm-8">
-      <div class= "rounded cajita">
-      <br>
-      <h4>CREACIÓN DE PORTAFOLIO WEB</h4>
-      <p>Trabajo Final de Argentina Programa</p>
-      <br> </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-<!--
-
-      <div class="container">
-        <h2>Basic Modal Example</h2>
-        
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          Launch demo modal
-        </button>
-  
-        
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div class="input-field"><input placeholder="Usuario" class="validate"></div>
-                <div class="input-field"><input placeholder="Contraseña" class="validate"></div>
-                <button type="button" class="second-button">Login</button>
-              </div>
-              
+        <div class="col-sm-2">
+          <div class= "rounded cajita">
+            <br>
+            <p>Teoría Musical, Composición, Violín</p>
+            <br>
+            <div class="progress barrita">
+            <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" 
+            style="width:100%"></div> 
+            <br>
             </div>
+           </div>
           </div>
+    </div>
+  </div>
+  
+  <!--Experiencia-->
+  
+  <div>
+    <h3>Experiencia laboral</h3>
+  </div>
+    
+    <div class="container-fluid container-arriba">
+      <div class="row">
+        <div class="col-sm-2" >
+          <div class= "rounded"> 
+          <br>
+          <p class="años">2020-Hoy</p>
+          <br> </div>
+          </div>
+        <div class="col-sm-8">
+        <div class= "rounded cajita">
+        <br>
+        <h4>CLASES PARTICULARES DE INGLÉS</h4>
+        <p>Grammar, Speaking, Reading </p>
+        <br> </div>
         </div>
       </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
+    </div>
+    
+    <div class="container-fluid container-medio">
+      <div class="row">
+        <div class="col-sm-2" >
+          <div class= "rounded "> 
+          <br>
+          <p class="años">2021-2022</p>
+          <br> </div>
+          </div>
+        <div class="col-sm-8">
+        <div class= "rounded cajita">
+        <br>
+        <h4>MANEJO DE REDES SOCIALES DEL CLUB POA</h4>
+        <p>Edición de videos, creación de flyers y diseño.
+          </p>
+        <br> </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container-fluid container-medio">
+      <div class="row">
+        <div class="col-sm-2" >
+          <div class= "rounded "> 
+          <br>
+          <p class="años">2022</p>
+          <br> </div>
+          </div>
+        <div class="col-sm-8">
+        <div class= "rounded cajita">
+        <br>
+        <h4>MOZA/VENDEDORA EN COPANI PURO CHOCOLATE</h4>
+        <p>Encargada de la caja, organización y venta del local y también de preparar/servir café y postres.    
+          </p>
+        <br> </div>
+        </div>
+      </div>
+    </div>
+  
+    <!--Experiencia-->
+  
+  <div>
+    <h3>Proyectos</h3>
+    </div>
+    
+    <div class="container-fluid container-arriba">
+      <div class="row">
+        <div class="col-sm-2" >
+          <div class= "rounded"> 
+          <br>
+          <p class="años">2023</p>
+          <br> </div>
+          </div>
+        <div class="col-sm-8">
+        <div class= "rounded cajita">
+        <br>
+        <h4>CREACIÓN DE PORTAFOLIO WEB</h4>
+        <p>Trabajo Final de Argentina Programa</p>
+        <br> </div>
+        </div>
+      </div>
+    </div>
+    

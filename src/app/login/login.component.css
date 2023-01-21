@@ -1,0 +1,60 @@
+* { 
+    background-color : rgb(221, 142, 236); 
+    font-family : sans-serif;
+    margin : 0px;
+
+  }
+
+  .body{
+    text-align : right;
+    margin-right: 20px;
+  }
+
+  .content {
+    border:#FFFF;
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 25px;
+    width: 300px;
+    padding: 10px; 
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+  .mau{
+    align-items:right;
+}
+
+  .input-field .validate {
+    border: none;
+    margin-bottom: 15px;
+    color: #fdfaff;
+    background: #d3a6df;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    }
+    
+    .second-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 60px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    background: #ad2dd4;
+    outline: none;
+    }
+    
+    .second-button:active{
+    background: linear-gradient(145deg,#e781e2, #c356d1);
+    box-shadow: 5px 5px 10px #f1e9e9, -5px -5px 10px #e9d8d8;
+    border: none;
+    outline: none;
+    }
+
+    .btn-close {
+    align: right ;
+    }
