@@ -1,0 +1,10 @@
+h3 {
+    font-family: serif;
+    font-size: 30px;
+    color : white;
+    font-weight : bold;
+    padding-left : 35px;
+    margin : 0;
+    margin-bottom: 0;
+    text-decoration : underline;
+  }

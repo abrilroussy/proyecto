@@ -1,13 +1,18 @@
 * { 
     background-color : rgb(221, 142, 236); 
     font-family : sans-serif;
-    margin : 0px;
-
+    align-items: center;
   }
 
   .body{
-    text-align : right;
-    margin-right: 20px;
+    text-align : center;
+    margin: auto; 
+
+  }
+
+  h4 {
+    color: white; 
+    margin-bottom: 15px;
   }
 
   .content {
@@ -17,12 +22,8 @@
     border-radius: 25px;
     width: 300px;
     padding: 10px; 
-    margin-right: 20px;
-    margin-bottom: 10px;
-}
-
-  .mau{
-    align-items:right;
+    align-items: center;
+    margin-top: 100px;
 }
 
   .input-field .validate {

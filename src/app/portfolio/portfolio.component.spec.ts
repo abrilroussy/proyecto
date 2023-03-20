@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PagEditarComponent } from './pag-editar.component';
+import { PortfolioComponent } from './portfolio.component';
 
-describe('PagEditarComponent', () => {
-  let component: PagEditarComponent;
-  let fixture: ComponentFixture<PagEditarComponent>;
+describe('PortfolioComponent', () => {
+  let component: PortfolioComponent;
+  let fixture: ComponentFixture<PortfolioComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PagEditarComponent ]
+      declarations: [ PortfolioComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PagEditarComponent);
+    fixture = TestBed.createComponent(PortfolioComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

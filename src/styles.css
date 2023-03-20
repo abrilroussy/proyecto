@@ -1,0 +1,120 @@
+* { 
+    background-color : rgb(221, 142, 236); 
+    font-family : sans-serif;
+    margin : 0px;
+
+  }
+
+  .modal-body{
+    text-align : center;
+  }
+
+  .modal-title {
+    text-align: center;
+    color: white;
+  }
+
+  .input-field .validate {
+    border: none;
+    margin-bottom: 15px;
+    color: #fdfaff;
+    background: #d3a6df;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    outline: none;
+    }
+    
+    .second-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 60px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    background: #ad2dd4;
+    outline: none;
+    }
+    
+    .second-button:active{
+    background: linear-gradient(145deg,#e781e2, #c356d1);
+    box-shadow: 5px 5px 10px #f1e9e9, -5px -5px 10px #e9d8d8;
+    border: none;
+    outline: none;
+    }
+
+
+  .icon {
+    margin-top : -80px;
+    padding : 10px;
+    z-index : 1;
+
+  }
+  .header {
+    position : relative ;
+    top : 0px;
+    left : 0px;
+    z-index : 0;
+    padding : 10px; 
+    padding-bottom : 0px;
+  }
+  .cajita {
+    background-color: rgb(180, 87, 180, 0.5);
+    color : white;
+    font-weight : bold;
+    line-height: 20px;
+    padding: 10px;
+   
+  }
+
+  p {
+    background : transparent;
+    color: white;
+    padding: 20px;
+  }
+
+  h4 { 
+    font-size: 25px;
+    font-family: fantasy ;
+    background: transparent;
+    padding-left: 20px;
+  }
+
+  h3 {
+    font-family: serif;
+    font-size: 30px;
+    color : white;
+    font-weight : bold;
+    padding-left : 35px;
+    margin : 0;
+    margin-bottom: 0;
+    text-decoration : underline;
+  }
+
+ .años {
+    color : white;
+    font-weight : bold;
+    padding-left : 20px;
+    font-size : 30px;
+    background-color : rgb(221, 142, 236); 
+    border-style:double;
+ }
+
+ .barrita {
+  margin-right : 5px; 
+  margin-bottom : 10px;
+  padding : 0px;
+ }
+
+ .container-arriba {
+  padding : 20px;
+  padding-top : 10px;
+ }
+
+ .container-medio { 
+  padding : 20px; 
+  padding-top : 0px;
+ } 
+
+
