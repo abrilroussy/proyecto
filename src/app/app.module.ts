@@ -12,6 +12,8 @@ import { ExperienciayproyectosComponent } from './experienciayproyectos/experien
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { PersonaService } from './service/persona.service';
+import { persona } from './Model/persona.model';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,10 @@ import {HttpClientModule} from '@angular/common/http';
     HttpClientModule,
     
   ],
-  providers: [],
+  providers: [
+    PersonaService,
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
