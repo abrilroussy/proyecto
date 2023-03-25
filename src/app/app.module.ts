@@ -9,33 +9,40 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { EducacionComponent } from './educacion/educacion.component';
 import { HabilidadesComponent } from './habilidades/habilidades.component';
 import { ExperienciayproyectosComponent } from './experienciayproyectos/experienciayproyectos.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { PersonaService } from './service/persona.service';
-import { persona } from './Model/persona.model';
+import { TokenService } from './service/token.service';
+import { NewExperienciaComponent } from './experienciayproyectos/new-experiencia.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { EditExperienciaComponent } from './experienciayproyectos/edit-experiencia.component';
+import { NewEducacionComponent } from './educacion/new-educacion.component';
+import { EditEducacionComponent } from './educacion/edit-educacion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     EncabezadoComponent,
     AboutmeComponent,
     EducacionComponent,
     HabilidadesComponent,
-    ExperienciayproyectosComponent,
-    PortfolioComponent
-  
+    ExperienciayproyectosComponent,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+    LoginComponent, 
+    NewExperienciaComponent, 
+    PortfolioComponent, EditExperienciaComponent, NewEducacionComponent, EditEducacionComponent,
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    
+    FormsModule,
+    RouterModule,
   ],
   providers: [
     PersonaService,
+    TokenService,
 
   ],
   bootstrap: [AppComponent]

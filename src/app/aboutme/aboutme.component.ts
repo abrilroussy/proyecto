@@ -10,13 +10,22 @@ import { PersonaService } from '../service/persona.service';
 })
 export class AboutmeComponent implements OnInit {
 
-  persona: persona = new persona("","","");
+  person: persona = new persona( 1, '', '', '', '', '', '');
   
   constructor (public personaService: PersonaService) { }
 
+
   ngOnInit(): void {
-    this.personaService.getPersona().subscribe(data => {this.persona = data; 
-      console.log(this.persona, data) })  }
+    this.personaService.getPersona().subscribe(data => {
+     var data2: string = JSON.stringify(data);
+     data2 = data2.replace('[','');
+     data2 = data2.replace(']','');
+     //const objeto: {id:number,nombre:string,apellido:string,img:string} = JSON.parse(this.data2);
+     //this.person.nombre = objeto.nombre;
+     //this.person.apellido = objeto.apellido;
+     //this.person.img = objeto.img;
+     this.person = JSON.parse(data2);
+     console.log(this.person)
+    })  }
 
 }
-

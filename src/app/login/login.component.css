@@ -1,61 +1,70 @@
-* { 
-    background-color : rgb(221, 142, 236); 
-    font-family : sans-serif;
-    align-items: center;
-  }
-
-  .body{
-    text-align : center;
-    margin: auto; 
-
-  }
-
-  h4 {
-    color: white; 
-    margin-bottom: 15px;
-  }
-
-  .content {
-    border:#FFFF;
-    border-style:solid;
-    border-width: 1px;
-    border-radius: 25px;
-    width: 300px;
-    padding: 10px; 
-    align-items: center;
-    margin-top: 100px;
+* {
+  background-color: rgb(221, 142, 236);
+  font-family: sans-serif;
+  align-items: center;
 }
 
-  .input-field .validate {
-    border: none;
-    margin-bottom: 15px;
-    color: #fdfaff;
-    background: #d3a6df;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 10px;
-    outline: none;
-    }
-    
-    .second-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border-radius: 60px;
-    border: none;
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    background: #ad2dd4;
-    outline: none;
-    }
-    
-    .second-button:active{
-    background: linear-gradient(145deg,#e781e2, #c356d1);
-    box-shadow: 5px 5px 10px #f1e9e9, -5px -5px 10px #e9d8d8;
-    border: none;
-    outline: none;
-    }
+.body {
+  text-align: center;
+  margin: auto;
 
-    .btn-close {
-    align: right ;
-    }
+}
+
+h4 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.content {
+  border: #FFFF;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 25px;
+  width: 300px;
+  padding: 10px;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#password {
+  border: none;
+  margin-bottom: 15px;
+  color: #fdfaff;
+  background: #d3a6df;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  outline: none;
+}
+
+#nombreUsuario {
+  border: none;
+  margin-bottom: 15px;
+  color: #fdfaff;
+  background: #d3a6df;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.second-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 60px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  background: #ad2dd4;
+  outline: none;
+  align-items: center;
+}
+
+.second-button:active {
+  background: linear-gradient(145deg, #e781e2, #c356d1);
+  box-shadow: 5px 5px 10px #f1e9e9, -5px -5px 10px #e9d8d8;
+  border: none;
+  outline: none;
+}

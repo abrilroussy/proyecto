@@ -1,10 +1,37 @@
 h3 {
-    font-family: serif;
-    font-size: 30px;
-    color : white;
-    font-weight : bold;
-    padding-left : 35px;
-    margin : 0;
-    margin-bottom: 0;
-    text-decoration : underline;
-  }
+  font-family: serif;
+  font-size: 30px;
+  color : white;
+  font-weight : bold;
+  padding-left : 35px;
+  margin : 0;
+  margin-bottom: 0;
+  text-decoration : underline;
+}
+
+.btnNuevaExp {
+  margin-top: 30px;
+  margin-left: 35px;
+}
+
+p {
+  background : transparent;
+  color: white;
+}
+
+h4 { 
+  font-size: 20px;
+  font-family: fantasy ;
+  background: transparent;
+  padding: 20px;
+  color: white;
+
+}
+
+.dibujo {
+  background: transparent;
+}
+
+.botonesEdicion {
+  margin-top: 20px;
+}

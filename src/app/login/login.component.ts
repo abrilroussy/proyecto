@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { LoginUsuario } from '../Model/login-usuario';
+import { AuthService } from '../service/auth.service';
+import { TokenService } from '../service/token.service';
 
 @Component({
   selector: 'app-login',
@@ -7,15 +10,46 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-   form:FormGroup;
+  isLogged = false;
+  isLogginFail = false;
+  loginUsuario!: LoginUsuario;
+  nombreUsuario!: string;
+  password!: string;
+  roles: string[] = [];
+  errormessaje!: string;
 
-  constructor(private formBuilder:FormBuilder) { 
-    this.form=this.formBuilder.group( 
-      {}
-    )
+  constructor(private tokenService: TokenService, private authService: AuthService, private router: Router) { }
+
+  ngOnInit(): void {
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
+      this.isLogginFail = false;
+      this.roles = this.tokenService.getAuthorities();
+    }
   }
-    
-    ngOnInit(): void {
+
+  onLogin(): void{
+    this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password); 
+    this.authService.login(this.loginUsuario).subscribe(data =>{
+        this.isLogged = true;
+        this.isLogginFail = false;
+        this.tokenService.setToken(data.token);
+        this.tokenService.setUsername(data.nombreUsuario);
+        this.tokenService.setAuthorities(data.authorities);
+        this.roles = data.authorities;
+        window.location.reload();
+        console.log("Login successful")
+        /*this.router.navigate([''])*/
+      }, err => {
+        this.isLogged = false;
+        this.isLogginFail = true;
+        this.errormessaje = err.error.messaje;
+        console.log("Login falló");
+      })
   }
+
+  /*public estaLogged() {
+    return this.isLogged;
+  } */
 
 }

@@ -8,3 +8,30 @@ h3 {
     margin-bottom: 0;
     text-decoration : underline;
   }
+
+  .btnNuevaExp {
+    margin-top: 30px;
+    margin-left: 35px;
+  }
+
+  p {
+    background : transparent;
+    color: white;
+  }
+
+  h4 { 
+    font-size: 20px;
+    font-family: fantasy ;
+    background: transparent;
+    padding: 20px;
+    color: white;
+
+  }
+
+  .dibujo {
+    background: transparent;
+  }
+
+  .botonesEdicion {
+    margin-top: 20px;
+  }

@@ -1,0 +1,40 @@
+* {
+    background-color: rgb(221, 142, 236);
+    font-family: sans-serif;
+    align-items: center;
+}
+
+.container {
+    border: #FFFF;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 25px;
+    width: 300px;
+    padding: 10px;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.titulos {
+    color: white;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 60px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    background: #ad2dd4;
+    outline: none;
+    align-items: center;
+}
+
+.button:active {
+    background: linear-gradient(145deg, #e781e2, #c356d1);
+    box-shadow: 5px 5px 10px #f1e9e9, -5px -5px 10px #e9d8d8;
+    border: none;
+    outline: none;
+}

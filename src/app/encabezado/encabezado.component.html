@@ -7,20 +7,22 @@
   
       <!-- LOGIN -->  
      <div class="login-btn">
-      <button type="button" class="btn btn-outline-light my-2 my-sm-0" (click)="test = !test" >Login</button>
+      {{getUser()}}
+      <button type="button" class="btn btn-outline-light my-2 my-sm-0" (click)="switch()"  *ngIf="!isLogged">Login</button>
+      <button type="button" class="btn btn-outline-light my-2 my-sm-0" (click)="onLogout()" *ngIf="isLogged">Logout</button>
     </div> 
     </nav>
   </div>
-
-  <app-login *ngIf="test"></app-login> 
+   <app-login *ngIf="test"></app-login>
+ 
   
   <!-- Banner header and icon --> 
   <div class="container-fluid">
     <div class="header" >
-        <img src="assets/Header2.png" 
+        <img src= {{person.header}}
         class ="img-fluid rounded" alt="header" height="290" width="1350"> 
       <div class="icon rounded-circle" >
-        <img src="assets/kdhs.jpg" class= "rounded-circle img-fluid" 
+        <img src= {{person.img}} class= "rounded-circle img-fluid" 
         alt="icon" height="130" width="130">
       </div>
     </div>
