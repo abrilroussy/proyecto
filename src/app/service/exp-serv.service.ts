@@ -8,7 +8,7 @@ import { Experiencia } from '../Model/experiencia';
 })
 export class ExpServService {
   
-  expURL = 'http://localhost:8080/exp/'
+  expURL = 'https://backendabril2.onrender.com/exp/'
 
   constructor(private httpClient: HttpClient) { }
 
